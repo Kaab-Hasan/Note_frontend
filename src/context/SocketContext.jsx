@@ -13,7 +13,7 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
     if (isAuthenticated && user) {
       // Connect to Socket.IO server
-      const socketInstance = io('http://localhost:5000', {
+      const socketInstance = io('https://note-backend-ud81.onrender.com', {
         withCredentials: true,
         transports: ['websocket', 'polling'],
         autoConnect: true,
