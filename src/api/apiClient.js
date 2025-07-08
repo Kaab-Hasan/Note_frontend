@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // When using Vite's proxy feature, we should use a relative URL
 // This will be proxied according to the vite.config.js settings
-const baseURL = '/api';
+const baseURL = 'https://note-backend-ud81.onrender.com';
 
 const apiClient = axios.create({
   baseURL,
