@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://note-backend-ud81.onrender.com',
         changeOrigin: true,
         secure: false
       }
